@@ -1,0 +1,22 @@
+<%- include('header.ejs') %>
+<!-- TO DO LIST FRONTEND -->
+<div class="container">
+	<div class="todo-app">
+		<h1><i class="fa-regular fa-pen-to-square"></i>To-do List:</h1>
+		
+			<form class="row" action="/" method="post">
+                <input input type="text" name="addNewItem" id="addNewItem" value="" placeholder="Add a new task" autocomplete="off">
+			    <button type="submit" name="list" value="<%= listTitle %>">Add</button>
+            </form>
+		
+        <h1><%= listTitle %></h1>
+		<ul id="list-container">
+            <% for(var i = 0; i < newlistItems.length; i++){ %>
+                <li> <%= newlistItems[i] %> </li>
+            <% } %>
+			<!-- <li class="checked">Task 1</li>
+			<li>Task 2</li> -->
+		</ul>
+	</div>
+</div>
+<%- include('footer.ejs') %>
