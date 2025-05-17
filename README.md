@@ -92,7 +92,7 @@ app.listen(3000, function(){
 });
 
 ```
-#### 🛠️ Usage Example (data.js)
+#### 🛠️ utils/date.js (data.js)
 ``` bash
 
 // # Chapter: 6
@@ -120,9 +120,17 @@ exports.getDay = function(){
 
 ```
 
+#### 📦 Technologies Used
+- Node.js
+- Express.js
+- EJS (Embedded JavaScript Templates)
+- body-parser
+- JavaScript (ES6)
+- Node.js module.exports for modular code
+
 #### 📌 Future Improvements
-- Use a database (MongoDB, PostgreSQL) instead of in-memory storage
-- Add user authentication (login/register)
-- Mark tasks as completed (not just delete)
-- Add due dates, priorities, and categories
-- REST API version for mobile or SPA support
+- Switch from in-memory tasks to database (MongoDB, SQLite, etc.)
+- User login & personalized task lists
+- Mark tasks as "done" instead of deleting
+- REST API version
+- Dark mode or theming
