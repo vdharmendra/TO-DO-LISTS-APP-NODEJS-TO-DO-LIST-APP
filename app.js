@@ -3,6 +3,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
+// UNDERSTANDING NODE MODULE EXPORTS
+// how to pass function and data between files
+const data = require(__dirname+'/data.js');
+
 const app = express();
 
 var items = ["buy food", "cook food", "eat food"];
@@ -15,15 +19,11 @@ app.set("view engine", 'ejs');
 
 
 app.get("/", function(req, res){
-    // # Chapter: 5
-    // PASSING DATA FROM YOUR WEBPAGE TO YOUR SERVER
-    var today = new Date();
-    var options = {
-        weekday:'long',
-        day:'numeric',
-        month:'long',
-    };
-    var day = today.toLocaleDateString('en-US', options);
+    // CHAPTER: 6
+    console.log(__dirname+'/data.js');
+    console.log(data.getDate() +'\n'+ data.getDay());
+    
+    var day = data.getDate()
     res.render("todolists", {listTitle: day, newlistItems: items});
 
 

@@ -58,15 +58,7 @@ app.set("view engine", 'ejs');
 
 
 app.get("/", function(req, res){
-    // # Chapter: 5
-    // PASSING DATA FROM YOUR WEBPAGE TO YOUR SERVER
-    var today = new Date();
-    var options = {
-        weekday:'long',
-        day:'numeric',
-        month:'long',
-    };
-    var day = today.toLocaleDateString('en-US', options);
+    
     res.render("todolists", {listTitle: day, newlistItems: items});
 
 
