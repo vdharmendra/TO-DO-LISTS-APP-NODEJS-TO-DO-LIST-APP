@@ -20,8 +20,8 @@ app.set("view engine", 'ejs');
 
 app.get("/", function(req, res){
     // CHAPTER: 6
-    console.log(__dirname+'/data.js');
-    console.log(data.getDate() +'\n'+ data.getDay());
+    // console.log(__dirname+'/data.js');
+    // console.log(data.getDate() +'\n'+ data.getDay());
     
     var day = data.getDate()
     res.render("todolists", {listTitle: day, newlistItems: items});
@@ -33,7 +33,7 @@ app.get("/", function(req, res){
 // POST REQ
 app.post("/", function(req, res){
 
-    console.log(req.body.list);
+    // console.log(req.body.list);
     var item = req.body.addNewItem;
     if(req.body.list === "Work list"){
         workListItems.push(item);

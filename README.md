@@ -1,5 +1,14 @@
-# ✅ TaskNode
+# ✅ TaskNest – Multi-List Todo App (Node.js & Express)
 Tagline: "A clean and simple To-Do List app built with Node.js, Express, and EJS."
+
+A server-side rendered task management application built using Node.js, Express, EJS, and modular architecture. Supports separate personal and work lists with dynamic date rendering and form handling.
+
+- 
+👨‍💻 Author
+Virendra D. Verma
+<a href="https://www.linkedin.com/in/dharmendraverma95/" target="_blank">🧑‍💻 LinkedIn Profile </a> | <a href="https://www.behance.net/dhirukumar" target="_blank">🧑‍💻 Behance Profile </a>
+- 
+
 
 ## 📘 Description
 TaskNode is a minimal, full-stack To-Do List application built using Node.js, Express.js, EJS, and body-parser. It allows users to add and delete daily tasks through a simple web interface. This project is ideal for learning routing, form handling, template rendering, and modular JavaScript.
