@@ -2,11 +2,25 @@
        
         <div class="text-center text-lg-left">
             <div class="copyright-text" style="text-align: center;padding: .6rem;">
-                <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                <p>Copyright &copy; <p id="date"></p>, All Right Reserved <a href="https://www.linkedin.com/in/dharmendraverma95/">Virendra D. Verma</a></p>
             </div>
         </div>
                   
     </footer>
+<script>
+    const today = new Date();
 
+    const options = {
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    };
+
+    const formattedDate = today.toLocaleDateString("en-US", options);
+
+    document.getElementById("date").innerHTML = formattedDate;
+
+</script>
 </body>
 </html>
